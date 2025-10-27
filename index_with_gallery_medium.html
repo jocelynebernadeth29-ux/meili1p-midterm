@@ -27,16 +27,17 @@
     }
     header {
       display: flex;
-      gap: 24px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 32px;
       border-bottom: 1px solid #ffe4e6;
-      align-items: center;
       background: var(--gradient);
       color: white;
     }
     h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 700;
       background-image: linear-gradient(90deg, #f472b6, #f59e0b);
       background-clip: text;
@@ -45,11 +46,9 @@
       text-shadow: 0 1px 2px rgba(0,0,0,0.15);
     }
     .meta {
-      font-size: 15px;
+      font-size: 16px;
       color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin-top: 8px;
     }
     section {
       padding: 24px;
@@ -60,25 +59,25 @@
       background: #fff0f3;
     }
     h2 {
-      font-size: 18px;
+      font-size: 20px;
       color: var(--accent);
       margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
     .block {
       background: #fff8f9;
       border-radius: 12px;
       padding: 16px;
       border: 1px solid #ffe4e6;
+      text-align: left;
+      line-height: 1.8;
+      font-size: 16px;
     }
     .image-gallery {
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 16px;
+      gap: 20px;
       margin-top: 20px;
+      flex-wrap: wrap;
     }
     .image-gallery img {
       width: 45%;
@@ -108,27 +107,23 @@
       cursor: pointer;
       font-weight: 600;
       box-shadow: 0 3px 8px rgba(249, 168, 212, 0.4);
+      margin-top: 10px;
     }
-    .block {
-  text-align: left;
-}
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div>
-        <h1>吳美莉 - 11111111</h1>
-        <div class="meta"><i class="lucide-mail"></i><span>your.email@example.com</span></div>
-      </div>
+      <h1>吳美莉 - 114011129</h1>
+      <div class="meta"><i class="lucide-mail"></i> your.email@example.com</div>
     </header>
 
     <section>
       <h2><i class="lucide-user"></i> 個人簡介</h2>
       <div class="block">
         熱衷於產品設計與前端開發，具備團隊合作與問題解決能力，喜歡學習新技術並實作在專案中。
-          <img src="image/download.jpg">
-          <img src="image/download2.jpg">
+          <img src="/image/download.jpg">
+          <img src="/image/download2.jpg">
         </div>
       </div>
     </section>
@@ -136,8 +131,16 @@
     <section>
       <h2><i class="lucide-graduation-cap"></i> 學歷</h2>
       <div class="block">
-        <div>國立某大學 / 資訊工程系 / 2021 - 2025（在學中）</div>
-        <div>高中：某某高中 / 主修自然組 / 2018 - 2021</div>
+        國立某大學 / 資訊工程系 / 2021 - 2025（在學中）<br>
+        高中：某某高中 / 主修自然組 / 2018 - 2021
+      </div>
+    </section>
+
+    <section>
+      <h2><i class="lucide-briefcase"></i> 專業經歷</h2>
+      <div class="block">
+        工作經驗 — 包裝人員（台中火車站地區）<br>
+        2024/10 - 2025/08 — 負責包裝與分類商品，確保出貨準確與效率。
       </div>
     </section>
 
@@ -152,9 +155,17 @@
     </section>
 
     <section>
+      <h2><i class="lucide-globe"></i> 語言</h2>
+      <div class="block">
+        中文（母語）<br>
+        英文（中等）
+      </div>
+    </section>
+
+    <section>
       <h2><i class="lucide-heart"></i> 其他</h2>
       <div class="block">
-        <div>興趣：攝影、旅遊、UI 設計</div>
+        興趣：攝影、旅遊、UI 設計<br>
         <button class="btn">下載 HTML</button>
       </div>
     </section>
